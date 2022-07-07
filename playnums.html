@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="learnnums.css">
+  <title>Learn - Precious Kids Academy</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <nav>
+    <div id="nav" class="hor">
+      <div id="menu">
+      <svg width="50" height="35" onclick="menu()">
+        <line x1="8" y1="10" x2="42" y2="10" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="2" y1="20" x2="48" y2="20" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="8" y1="30" x2="42" y2="30" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+      </svg>
+      </div>
+      <a>
+      <img id="current" src="learn.png" width="32" alt="learn"/>
+      </a>
+      <a href="play.html">
+      <img class="others" src="play.png" alt="play"/>
+      </a>
+      <a href="quiz.html">
+      <img class="others" src="quiz.png" alt="quiz"/>
+      </a>
+    </div>
+  </nav>
+  <a href="numbers.html" id="back">
+    <img src="back.png" alt="previous"/>
+  </a>
+  <main>
+    <p onclick="say(0)">1</p>
+    <p onclick="say(1)">2</p>
+    <p onclick="say(2)">3</p>
+    <p onclick="say(3)">4</p>
+    <p onclick="say(4)">5</p>
+    <p onclick="say(5)">6</p>
+    <p onclick="say(6)">7</p>
+    <p onclick="say(7)">8</p>
+    <p onclick="say(8)">9</p>
+    <p onclick="say(9)">10</p>
+    <script src="count.js"></script>
+  </main>
+</body>
+</html>

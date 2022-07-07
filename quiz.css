@@ -4,6 +4,11 @@ body{
   justify-content: center;
   align-items: center;
   background: #5929e5;
+  font-family: fantasy;
+  user-select: none;
+}
+a{
+  color: #000;
 }
 .hor{
   display: flex;
@@ -20,56 +25,68 @@ nav{
   background: #fff;
   border-bottom: solid 2px #fff;
 }
-#nav img,svg{
+#nav div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#nav img{
   width: 20vw;
   height: auto;
 }
-#current{
-  margin: 1px;
-  background: #fff;
-  border-radius: 5%;
-  filter: invert(100%);
+#back{
+  width: 5%;
+  height: 5%;
+  left: 1vw;
+  top: 25vw;
+  position: fixed;
+  z-index: 2;
 }
-.others{
-  border-bottom: 2px solid #5929e5;
-}
+
 main{
   margin: none;
   margin-top: 25vw;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main div{
+  display: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  margin: 2vw;
 }
-main a{
+main div *{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 40vw;
   height: 40vw;
-  margin: 5vw 0;
+  border-radius: 20%;
   background: #fef6ff;
-  border-radius: 15%;
-  text-decoration: none;
 }
-a div img{
-  width: 22vw;
+main div img{
+  margin: 2vw;
 }
-h1{
-  font-size: 1em;
+#message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  position: fixed;
+  width: 70vw;
+  height: 70vh;
+  left: 15vw;
+  top: 20vh;
+  color: #fef6ff;
+  background: #000;
+  font-family: kidy, fantasy;
 }
-@media screen and (min-width: 600px){
-  main{
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  main a{
-    width: 20vw;
-    height: 20vw;
-  }
-  a div img{
-    width: 11vw;
-  }
+@font-face {
+  font-family: kidy;
+  font-weight: bold;
+  src: url('font1.ttf');
 }
-

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="poems1.css">
+  <title>Pre-School Poems/Songs - Precious Kids Academy</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <nav>
+    <div id="nav" class="hor">
+      <svg id="menu" width="70" height="70" onclick="menu()">
+        <line x1="25" y1="10" x2="45" y2="10" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="20" y1="20" x2="50" y2="20" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="25" y1="30" x2="45" y2="30" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+      </svg>
+      <a>
+      <img id="current" src="learn.png" width="32" alt="learn"/>
+      </a>
+      <a href="play.html">
+      <img class="others" src="play.png" alt="play"/>
+      </a>
+      <a href="quiz.html">
+      <img class="others" src="quiz.png" alt="quiz"/>
+      </a>
+    </div>
+  </nav>
+  <a href="learn.html" id="back">
+    <img src="back.png" alt="previous"/>
+  </a>
+  <div id="wrapper"><div id="player"></div></div>
+  <main id="main">
+    <div>
+      <h2>TWINKLE TWINKLE LITTLE STAR</h2>
+      <img src="poems.png" alt="audio" />
+      <div class="controls hor">
+        <img id="twink" class="resume" src="resume.png" alt="play" onclick="playtwink.play()"/>
+        <img class="replay" src="replay.png" alt="replay" onclick="playtwink.reload()"/>
+        <img id="twink2" class="loop" src="loop.png" alt="repeat" onclick="playtwink.loop()"/>
+      </div>
+    </div>
+    <div>
+      <h2>WHAT&apos;S YOUR NAME</h2>
+      <img src="poems.png" alt="audio" />
+      <div class="controls hor">
+        <img id="name" class="resume" src="resume.png" alt="play" onclick="playname.play()"/>
+        <img class="replay" src="replay.png" alt="replay" onclick="playname.reload()"/>
+        <img id="name2" class="loop" src="loop.png" alt="repeat" onclick="playname.loop()"/>
+      </div>
+    </div>
+    <div>
+      <h2>1 2 3 4 5, yeah!</h2>
+      <img src="poems.png" alt="audio" />
+      <div class="controls hor">
+        <img id="nums" class="resume" src="resume.png" alt="play" onclick="playnums.play()"/>
+        <img class="replay" src="replay.png" alt="replay" onclick="playnums.reload()"/>
+        <img id="nums2" class="loop" src="loop.png" alt="repeat" onclick="playnums.loop()"/>
+      </div>
+    </div>
+    <div>
+      <h2>THIS IS WHAT I DO</h2>
+      <img src="poems.png" alt="audio" />
+      <div class="controls hor">
+        <img id="wake" class="resume" src="resume.png" alt="play" onclick="playwake.play()"/>
+        <img class="replay" src="replay.png" alt="replay" onclick="playwake.reload()"/>
+        <img id="wake2" class="loop" src="loop.png" alt="repeat" onclick="playwake.loop()"/>
+      </div>
+    </div>
+    <div>
+      <h2>ALPHABET SONG</h2>
+      <img src="poems.png" alt="audio" />
+      <div class="controls hor">
+        <img id="abc" class="resume" src="resume.png" alt="play" onclick="playabc.play()"/>
+        <img class="replay" src="replay.png" alt="replay" onclick="playabc.reload()"/>
+        <img id="abc2" class="loop" src="loop.png" alt="repeat" onclick="playabc.loop()"/>
+      </div>
+    </div>
+    <div>
+      <h2>I KNOW COLOR</h2>
+      <img src="poems.png" alt="audio" />
+      <div class="controls hor">
+        <img id="color" class="resume" src="resume.png" alt="play" onclick="playcolor.play()"/>
+        <img class="replay" src="replay.png" alt="replay" onclick="playcolor.reload()"/>
+        <img id="color2" class="loop" src="loop.png" alt="repeat" onclick="playcolor.loop()"/>
+      </div>
+    </div>
+    <div>
+      <h2>BODY PARTS</h2>
+      <img src="poems.png" alt="audio" />
+      <div class="controls hor">
+        <img id="body" class="resume" src="resume.png" alt="play" onclick="playbody.play()"/>
+        <img class="replay" src="replay.png" alt="replay" onclick="playbody.reload()"/>
+        <img id="body2" class="loop" src="loop.png" alt="repeat" onclick="playbody.loop()"/>
+      </div>
+    </div>
+  </main>
+  <script src="poem.js"></script>
+</body>
+</html>

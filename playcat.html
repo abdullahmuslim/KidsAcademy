@@ -3,42 +3,42 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta property="og:title" content="Precious Kids Academy: E-learning"/>
+  <meta property="og:description" content="enroll your child to the world best online educating platform"/>
+  <meta property="og:image" content="logo.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="quiz.css">
-  <title>Quiz - Precious Kids Academy</title>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Home - precious kid academy</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   <nav>
     <div id="nav" class="hor">
-      <div>
       <svg width="70" height="70" onclick="menu()" id="menu">
         <line x1="25" y1="10" x2="45" y2="10" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
         <line x1="20" y1="20" x2="50" y2="20" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
         <line x1="25" y1="30" x2="45" y2="30" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
       </svg>
-      </div>
-      <div>SCORE:&nbsp;<div id="score">0</div></div>
+      <h1 id="schname">Precious Kids Academy</h1>
+      <img src="logo.png" width="32" alt="logo"/>
     </div>
   </nav>
-  <a href="quizcat.html" id="back">
+  <a href="index.html" id="back">
     <img src="back.png" alt="previous"/>
   </a>
   <main>
-    <div id="options">
-      <p onclick="check(this.value)"></p>
-      <p onclick="check(this.value)"></p>
-      <p onclick="check(this.value)"></p>
-      <p onclick="check(this.value)"></p>
+    <a href="play.html">
     </div>
-    <div id="images">
-      <img onclick="check(this.value)"/>
-      <img onclick="check(this.value)"/>
-      <img onclick="check(this.value)"/>
-      <img onclick="check(this.value)"/>
+      <img src="play.png" alt="learn.png" />
+      <h1>PRE SCHOOL</h1>
     </div>
+    </a>
+    <a href="#">
+    <div>
+      <img src="play.png" alt="play.png" />
+      <h1>KINDERGATEN</h1>
+    </div>
+    </a>
   </main>
-  <div id="message"></div>
-  <script src="quiz.js"></script>
 </body>
 </html>
