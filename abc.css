@@ -1,0 +1,12 @@
+body{
+  font-family: kidy, fantasy;
+}
+a{
+  color: #000;
+}
+
+@font-face {
+  font-family: kidy;
+  font-weight: bold;
+  src: url('fonts/font1.ttf');
+}
