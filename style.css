@@ -3,6 +3,15 @@ body{
   justify-content: center;
   align-items: center;
   background: #5929e5;
+  text-align: center;
+  font-family: kidy, fantasy;
+  user-select: none;
+}
+img{
+  pointer-events: none;
+}
+a{
+  color: #000;
 }
 .hor{
   display: flex;
@@ -18,15 +27,24 @@ nav{
   height: auto;
   background: #fff;
 }
-#nav img,svg{
+#nav img{
   width: 20vw;
   height: auto;
+}
+#back{
+  width: 5%;
+  height: 5%;
+  left: 1vw;
+  top: 30vw;
+  position: fixed;
+  z-index: 2;
 }
 main{
   margin: none;
   margin-top: 25vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 main a{
@@ -44,16 +62,22 @@ main a{
 a div img{
   width: 40vw;
 }
+@font-face {
+  font-family: kidy;
+  font-weight: bold;
+  src: url('font1.ttf');
+}
+
 @media screen and (min-width: 600px){
-  main{
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
   main a{
     width: 40vw;
     height: 40vw;
+    margin: 3vw;
   }
   a div img{
     width: 22vw;
+  }
+  #back{
+    top: 20vw;
   }
 }
