@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="learnnums.css">
+  <title>Pre-School Learn 123 - Precious Kids Academy</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <nav>
+    <div id="nav" class="hor">
+      <div id="menu">
+      <svg width="50" height="35" onclick="menu()">
+        <line x1="8" y1="10" x2="42" y2="10" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="2" y1="20" x2="48" y2="20" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="8" y1="30" x2="42" y2="30" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+      </svg>
+      </div>
+      <a>
+      <img id="current" src="learn.png" width="32" alt="learn"/>
+      </a>
+      <a href="play.html">
+      <img class="others" src="play.png" alt="play"/>
+      </a>
+      <a href="quiz.html">
+      <img class="others" src="quiz.png" alt="quiz"/>
+      </a>
+    </div>
+  </nav>
+  <a href="numbers.html" id="back">
+    <img src="back.png" alt="previous"/>
+  </a>
+  <main id="main">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <p>6</p>
+    <p>7</p>
+    <p>8</p>
+    <p>9</p>
+    <p>10</p>
+  </main>
+  <div class="controls">
+    <div id="start" onclick="start()"><p>start</p></div>
+    <div id="loop" onclick="loopit()"><p>repeat</p></div>
+  </div>
+  <script src="count.js"></script>
+</body>
+</html>
