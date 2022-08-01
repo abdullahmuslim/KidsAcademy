@@ -1,3 +1,3 @@
 # KidsAcademy
 This is an online educating platform
-https://kidacademytemp.netlify.app
+[Visit site](https://code-wizard925.github.io/KidsAcademy/)
