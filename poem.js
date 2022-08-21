@@ -82,3 +82,15 @@ let playwake = new Player("wake", "wake2", wake);
 let playabc = new Player("abc", "abc2", abc);
 let playcolor = new Player("color", "color2", color);
 let playbody = new Player("body", "body2", body);
+
+//update lock values
+if(localStorage.getItem("unlockedContents")){
+  let value = JSON.parse(localStorage.getItem("unlockedContents"))
+  if(value < 3){
+    let values = 3;
+    values = JSON.stringify(values);
+    localStorage.setItem("unlockedContents", values);
+  }
+}else{
+  localStorage.setItem("unlockedContents", "2");
+}
