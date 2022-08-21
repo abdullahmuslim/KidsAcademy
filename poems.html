@@ -5,97 +5,171 @@
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="poems1.css">
+  <link rel="stylesheet" href="menu.css">
   <title>Pre-School Poems/Songs - Precious Kids Academy</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <div id="trans" role="transparent background" onmouseover="canc()"></div>
+  <div id="menuContent">
+    <div id="heading">
+      Precious Kid Academy v0.1
+    </div>
+    <div class="navs" onclick="help()">HELP</div>
+    <div class="navs" onclick="about()">ABOUT</div>
+    <div class="navs" onclick="contact()">CONTACT DEVELOPER</div>
+    <div id="togglers">
+      <div class="togglers" id="theme" onclick="toggle('theme')">
+        <p>Dark theme</p>
+        <div class="hole">
+          <div class="button">
+          </div>
+        </div>
+      </div>
+      <div class="togglers" id="lock" onclick="toggle('lock')">
+        <p>lock</p>
+        <div class="hole">
+          <div class="button">
+          </div>
+        </div>
+      </div>
+    </div>
+    <p id="copyright"> © 2022 Precious Kid Academy</p>
+    <div class="contents">
+      <div id="help">
+        <div class="canc" onclick="cancHelp()">
+          <svg viewBox="0 0 45 45">
+            <line x1="8" y1="10" x2="30" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+            <line x1="30" y1="10" x2="8" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+          </svg>
+        </div>
+        <h3>Audios abnormalities ?</h3>
+        If poems are not playing completely or stop at some point, check your internet connection and gently wait, this is due to incomplete download of media.
+        <h3>Don't like the theme ?</h3>
+        Open the menu and toggle the theme button to suit your need.
+        <h3>Want to lock/unlock lessons ?</h3>
+        Open the menu and toggle the lock button in order to lock and unlock lessons availability, useful when you won't be around to monitor kids.
+        <aside>Need more help ? <span onclick="autoContact()">Contact Developer.</span></aside>
+      </div>
+      <div id="about">
+        <div class="canc" onclick="cancAbout()">
+          <svg viewBox="0 0 45 45">
+            <line x1="8" y1="10" x2="30" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+            <line x1="30" y1="10" x2="8" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+          </svg>
+        </div>
+        <h3>About App</h3>
+        This is a simple demo of an online educating platform for pre-schoolers.
+        Kids tend to learn faster with music and can be noticed as this app teach your kids from poems to animals, using music.
+        Let your children learn in the fastest and most fun way.
+        <h3>About Developer</h3>
+        Abdullah is a young web developer, aspirant of game development and technology as a whole.
+      </div>
+      <div id="contact">
+        <div class="canc" onclick="cancContact()">
+          <svg viewBox="0 0 45 45">
+            <line x1="8" y1="10" x2="30" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+            <line x1="30" y1="10" x2="8" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+          </svg>
+        </div>
+        Connect me on social media
+        <ul>
+          <li><a name="aLink" href="https://wa.me/message/A53BTUPBBHYBM1">Watsapp</a></li>
+          <li><a name="aLink" href="tel: +2347042448312">Telegram</a></li>
+          <li><a name="aLink" href="https://www.facebook.com/profile.php?id=100061691281857">Facebook</a></li>
+      </div>
+    </div>
+  </div>
   <nav>
     <div id="nav" class="hor">
-      <svg id="menu" width="70" height="70" onclick="menu()">
-        <line x1="25" y1="10" x2="45" y2="10" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
-        <line x1="20" y1="20" x2="50" y2="20" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
-        <line x1="25" y1="30" x2="45" y2="30" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+      <div id="menu">
+      <svg onclick="menu()" viewBox="0 0 50 50">
+        <line x1="8" y1="15" x2="42" y2="15" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="8" y1="25" x2="42" y2="25" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="8" y1="35" x2="42" y2="35" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
       </svg>
+      </div>
       <a>
       <img id="current" src="learn.png" width="32" alt="learn"/>
       </a>
       <a href="play.html">
       <img class="others" src="play.png" alt="play"/>
       </a>
-      <a href="quiz.html">
-      <img class="others" src="quiz.png" alt="quiz"/>
+      <a class="lockItems items8" href="quiz.html">
+      <img name="navImage" class="elements others" src="quiz.png" alt="quiz"/>
       </a>
     </div>
   </nav>
-  <a href="learn.html" id="back">
+  <a class="elements" href="learn.html" id="back">
     <img src="back.png" alt="previous"/>
   </a>
   <div id="wrapper"><div id="player"></div></div>
   <main id="main">
-    <div>
+    <div class="elements">
       <h2>TWINKLE TWINKLE LITTLE STAR</h2>
       <img src="poems.png" alt="audio" />
       <div class="controls hor">
-        <img id="twink" class="resume" src="resume.png" alt="play" onclick="playtwink.play()"/>
-        <img class="replay" src="replay.png" alt="replay" onclick="playtwink.reload()"/>
-        <img id="twink2" class="loop" src="loop.png" alt="repeat" onclick="playtwink.loop()"/>
+        <img name="learn" id="twink" class="resume" src="resume.png" alt="play" onclick="playtwink.play()"/>
+        <img name="learn" class="replay" src="replay.png" alt="replay" onclick="playtwink.reload()"/>
+        <img name="learn" id="twink2" class="loop" src="loop.png" alt="repeat" onclick="playtwink.loop()"/>
       </div>
     </div>
-    <div>
+    <div class="elements">
       <h2>WHAT&apos;S YOUR NAME</h2>
       <img src="poems.png" alt="audio" />
       <div class="controls hor">
-        <img id="name" class="resume" src="resume.png" alt="play" onclick="playname.play()"/>
-        <img class="replay" src="replay.png" alt="replay" onclick="playname.reload()"/>
-        <img id="name2" class="loop" src="loop.png" alt="repeat" onclick="playname.loop()"/>
+        <img name="learn" id="name" class="resume" src="resume.png" alt="play" onclick="playname.play()"/>
+        <img name="learn" class="replay" src="replay.png" alt="replay" onclick="playname.reload()"/>
+        <img name="learn" id="name2" class="loop" src="loop.png" alt="repeat" onclick="playname.loop()"/>
       </div>
     </div>
-    <div>
+    <div class="elements">
       <h2>1 2 3 4 5, yeah!</h2>
       <img src="poems.png" alt="audio" />
       <div class="controls hor">
-        <img id="nums" class="resume" src="resume.png" alt="play" onclick="playnums.play()"/>
-        <img class="replay" src="replay.png" alt="replay" onclick="playnums.reload()"/>
-        <img id="nums2" class="loop" src="loop.png" alt="repeat" onclick="playnums.loop()"/>
+        <img name="learn" id="nums" class="resume" src="resume.png" alt="play" onclick="playnums.play()"/>
+        <img name="learn" class="replay" src="replay.png" alt="replay" onclick="playnums.reload()"/>
+        <img name="learn" id="nums2" class="loop" src="loop.png" alt="repeat" onclick="playnums.loop()"/>
       </div>
     </div>
-    <div>
+    <div class="elements">
       <h2>THIS IS WHAT I DO</h2>
       <img src="poems.png" alt="audio" />
       <div class="controls hor">
-        <img id="wake" class="resume" src="resume.png" alt="play" onclick="playwake.play()"/>
-        <img class="replay" src="replay.png" alt="replay" onclick="playwake.reload()"/>
-        <img id="wake2" class="loop" src="loop.png" alt="repeat" onclick="playwake.loop()"/>
+        <img name="learn" id="wake" class="resume" src="resume.png" alt="play" onclick="playwake.play()"/>
+        <img name="learn" class="replay" src="replay.png" alt="replay" onclick="playwake.reload()"/>
+        <img name="learn" id="wake2" class="loop" src="loop.png" alt="repeat" onclick="playwake.loop()"/>
       </div>
     </div>
-    <div>
+    <div class="elements">
       <h2>ALPHABET SONG</h2>
       <img src="poems.png" alt="audio" />
       <div class="controls hor">
-        <img id="abc" class="resume" src="resume.png" alt="play" onclick="playabc.play()"/>
-        <img class="replay" src="replay.png" alt="replay" onclick="playabc.reload()"/>
-        <img id="abc2" class="loop" src="loop.png" alt="repeat" onclick="playabc.loop()"/>
+        <img name="learn" id="abc" class="resume" src="resume.png" alt="play" onclick="playabc.play()"/>
+        <img name="learn" class="replay" src="replay.png" alt="replay" onclick="playabc.reload()"/>
+        <img name="learn" id="abc2" class="loop" src="loop.png" alt="repeat" onclick="playabc.loop()"/>
       </div>
     </div>
-    <div>
+    <div class="elements">
       <h2>I KNOW COLOR</h2>
       <img src="poems.png" alt="audio" />
       <div class="controls hor">
-        <img id="color" class="resume" src="resume.png" alt="play" onclick="playcolor.play()"/>
-        <img class="replay" src="replay.png" alt="replay" onclick="playcolor.reload()"/>
-        <img id="color2" class="loop" src="loop.png" alt="repeat" onclick="playcolor.loop()"/>
+        <img name="learn" id="color" class="resume" src="resume.png" alt="play" onclick="playcolor.play()"/>
+        <img name="learn" class="replay" src="replay.png" alt="replay" onclick="playcolor.reload()"/>
+        <img name="learn" id="color2" class="loop" src="loop.png" alt="repeat" onclick="playcolor.loop()"/>
       </div>
     </div>
-    <div>
+    <div class="elements">
       <h2>BODY PARTS</h2>
       <img src="poems.png" alt="audio" />
       <div class="controls hor">
-        <img id="body" class="resume" src="resume.png" alt="play" onclick="playbody.play()"/>
-        <img class="replay" src="replay.png" alt="replay" onclick="playbody.reload()"/>
-        <img id="body2" class="loop" src="loop.png" alt="repeat" onclick="playbody.loop()"/>
+        <img name="learn" id="body" class="resume" src="resume.png" alt="play" onclick="playbody.play()"/>
+        <img name="learn" class="replay" src="replay.png" alt="replay" onclick="playbody.reload()"/>
+        <img name="learn" id="body2" class="loop" src="loop.png" alt="repeat" onclick="playbody.loop()"/>
       </div>
     </div>
   </main>
+  <script src="menu.js"></script>
   <script src="poem.js"></script>
 </body>
 </html>
