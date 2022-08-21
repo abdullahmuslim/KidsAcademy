@@ -38,7 +38,10 @@ nav{
 }
 #menu{
   width: 20vw;
-  height: auto;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #nav img{
   width: 20vw;
@@ -61,11 +64,11 @@ main{
   justify-content: center;
   flex-wrap: wrap;
 }
-p{
+main p{
   display: inline;
   font-size: 2em;
 }
-p:active{
+main p:active{
   background: #000;
 }
 main p{

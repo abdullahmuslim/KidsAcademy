@@ -1,0 +1,135 @@
+#trans{
+  position: fixed;
+  z-index: 4;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -101vw;
+  background: rgb(0, 0, 0, 0.8);
+}
+#menuContent{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: -71vw;
+  width: 70vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: none;
+  transition: left 2s ease-in;
+  border-right: 2px solid #000;
+}
+#menuContent div{
+  color: #fff;
+  font-size: 2vh;
+  text-decoration: none;
+}
+#heading{
+  padding: 7vh;
+  background: linear-gradient(45deg, #777, #000);
+}
+.navs{
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#menuContent .togglers:active, #menuContent a:active, #menuContent .navs:active{
+  background: #333;
+}
+#togglers{
+  margin-top: 20vh;
+}
+.togglers{
+  display: grid;
+  column-gap: 30vw;
+  margin: 3vh auto;
+}
+.togglers p{
+  margin-left: 1vw;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.hole{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  width: 9vh;
+  height: 4.5vh;
+  background: #777;
+  margin: auto;
+  right: 1%;
+  border-radius: 3vh;
+}
+.button{
+  position: relative;
+  left: -0.1vh;
+  top: -1vh;
+  width: 6vh;
+  height: 6vh;
+  background: #ccc;
+  margin-top: .1vh;
+  border-radius: 3vh;
+  transition: left 0.2s linear;
+}
+#copyright{
+  font-size: 2vh;
+  font-family: Sans-Serif;
+  word-spacing: 1vh;
+  letter-spacing: .3vh;
+  width: 70vw;
+  padding-top: 4vh;
+  border-top: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+#help, #about, #contact{
+  text-align: center;
+  font-size: 15px;
+  position: fixed;
+  width: 70vw;
+  height: 100vh;
+  left: -71vw;
+  top: 0;
+  background: #000;
+  padding: auto 5vw;
+  line-height: 4vh;
+  color: #0f0;
+}
+.canc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vh;
+  height: 8vh;
+}
+#contact a{
+  color: #fff;
+  cursor: pointer;
+  font-size: 2em;
+  text-decoration: none;
+}
+#contact li:active{
+  font-size: 2.01em;
+}
+#contact ul{
+  margin-top: 3vh;
+}
+#contact li{
+  list-style-type: none;
+  margin: 2vh auto;
+}
+aside{
+  position: absolute;
+  bottom: 2vh;
+  right: 0;
+}
+span{
+  color: #5292e5;
+}

@@ -36,13 +36,17 @@ nav{
   background: #fff;
   border-bottom: 2px solid #fff;
 }
-#menu{
-  width: 20vw;
-  height: auto;
-}
+
 #nav img{
   width: 20vw;
   height: auto;
+}
+#menu{
+  width: 20vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #back{
   width: 5%;
@@ -62,11 +66,11 @@ main{
   justify-content: center;
   flex-wrap: wrap;
 }
-p{
+main p{
   display: inline;
   font-size: 2em;
 }
-p:active{
+main p:active{
   background: #000;
 }
 main p{

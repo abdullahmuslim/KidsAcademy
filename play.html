@@ -5,44 +5,118 @@
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="play.css">
+  <link rel="stylesheet" href="menu.css">
   <title>Play - Precious Kids Academy</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <div id="trans" role="transparent background" onmouseover="canc()"></div>
+  <div id="menuContent">
+    <div id="heading">
+      Precious Kid Academy v0.1
+    </div>
+    <div class="navs" onclick="help()">HELP</div>
+    <div class="navs" onclick="about()">ABOUT</div>
+    <div class="navs" onclick="contact()">CONTACT DEVELOPER</div>
+    <div id="togglers">
+      <div class="togglers" id="theme" onclick="toggle('theme')">
+        <p>Dark theme</p>
+        <div class="hole">
+          <div class="button">
+          </div>
+        </div>
+      </div>
+      <div class="togglers" id="lock" onclick="toggle('lock')">
+        <p>lock</p>
+        <div class="hole">
+          <div class="button">
+          </div>
+        </div>
+      </div>
+    </div>
+    <p id="copyright"> © 2022 Precious Kid Academy</p>
+    <div class="contents">
+      <div id="help">
+        <div class="canc" onclick="cancHelp()">
+          <svg viewBox="0 0 45 45">
+            <line x1="8" y1="10" x2="30" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+            <line x1="30" y1="10" x2="8" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+          </svg>
+        </div>
+        <h3>Audios abnormalities ?</h3>
+        If poems are not playing completely or stop at some point, check your internet connection and gently wait, this is due to incomplete download of media.
+        <h3>Don't like the theme ?</h3>
+        Open the menu and toggle the theme button to suit your need.
+        <h3>Want to lock/unlock lessons ?</h3>
+        Open the menu and toggle the lock button in order to lock and unlock lessons availability, useful when you won't be around to monitor kids.
+        <aside>Need more help ? <span onclick="autoContact()">Contact Developer.</span></aside>
+      </div>
+      <div id="about">
+        <div class="canc" onclick="cancAbout()">
+          <svg viewBox="0 0 45 45">
+            <line x1="8" y1="10" x2="30" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+            <line x1="30" y1="10" x2="8" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+          </svg>
+        </div>
+        <h3>About App</h3>
+        This is a simple demo of an online educating platform for pre-schoolers.
+        Kids tend to learn faster with music and can be noticed as this app teach your kids from poems to animals, using music.
+        Let your children learn in the fastest and most fun way.
+        <h3>About Developer</h3>
+        Abdullah is a young web developer, aspirant of game development and technology as a whole.
+      </div>
+      <div id="contact">
+        <div class="canc" onclick="cancContact()">
+          <svg viewBox="0 0 45 45">
+            <line x1="8" y1="10" x2="30" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+            <line x1="30" y1="10" x2="8" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+          </svg>
+        </div>
+        Connect me on social media
+        <ul>
+          <li><a name="aLink" href="https://wa.me/message/A53BTUPBBHYBM1">Watsapp</a></li>
+          <li><a name="aLink" href="tel: +2347042448312">Telegram</a></li>
+          <li><a name="aLink" href="https://www.facebook.com/profile.php?id=100061691281857">Facebook</a></li>
+      </div>
+    </div>
+  </div>
   <nav>
     <div id="nav" class="hor">
-      <svg width="70" height="70" onclick="menu()" id="menu">
-        <line x1="25" y1="10" x2="45" y2="10" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
-        <line x1="20" y1="20" x2="50" y2="20" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
-        <line x1="25" y1="30" x2="45" y2="30" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+      <div id="menu">
+      <svg onclick="menu()" viewBox="0 0 50 50">
+        <line x1="8" y1="15" x2="42" y2="15" style="stroke: #000; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="8" y1="25" x2="42" y2="25" style="stroke: #000; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="8" y1="35" x2="42" y2="35" style="stroke: #000; stroke-width: 3; stroke-linecap: round;"/>
       </svg>
+      </div>
       <a href="learn.html">
-      <img class="others" src="learn.png" width="32" alt="learn"/>
+      <img name="navImage" class="others elements" src="learn.png" width="32" alt="learn"/>
       </a>
       <a>
       <img id="current" src="play.png" alt="play"/>
       </a>
-      <a href="quiz.html">
-      <img class="others" src="quiz.png" alt="quiz"/>
+      <a class="lockItems items8" href="quiz.html">
+      <img name="navImage" class="others elements" src="quiz.png" alt="quiz"/>
       </a>
     </div>
   </nav>
-  <a href="playcat.html" id="back">
+  <a class="elements" href="index.html" id="back">
     <img src="back.png" alt="previous"/>
   </a>
   <main>
-    <a href="regLetter.html">
+    <a class="lockItems items5 elements" href="regLetter.html">
     <div>
       <img src="regLetter.png" alt="learn.png" />
       <h1>LETTER RECONGNITION</h1>
     </div>
     </a>
-    <a href="regSound.html">
+    <a class="lockItems items5 elements" href="regSound.html">
     <div>
-      <img src="regAnim.png" alt="play.png" />
+      <img name="learn" src="regAnim.png" alt="play.png" />
       <h1>SOUND RECONGNITION</h1>
     </div>
     </a>
   </main>
+  <script src="menu.js"></script>
 </body>
 </html>
