@@ -23,6 +23,7 @@ a{
 nav{
   position: fixed;
   top: 0;
+  z-index: 1;
   width: 100vw;
   height: auto;
   background: #fff;
@@ -30,6 +31,13 @@ nav{
 #nav img{
   width: 20vw;
   height: auto;
+}
+#menu{
+  width: 20vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #back{
   width: 5%;
@@ -40,6 +48,7 @@ nav{
   z-index: 2;
 }
 main{
+  z-index: 0;
   margin: none;
   margin-top: 25vw;
   display: flex;
