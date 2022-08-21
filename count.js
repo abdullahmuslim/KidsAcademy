@@ -64,8 +64,6 @@ function animate(target, value){
       nums[target].style.animation = "";
       nums[target].style.filter = "";
       if (target == nums.length -1 && value != 10){
-        //value += 1;
-        console.log(value);
         notinit = true;
         if (value == 2){
           setTimeout(function(){animate(0, value)}, 3100);
@@ -126,4 +124,16 @@ function clear(){
 }
 function say(num){
   songs[num].play();
+}
+
+//update lock values
+if(localStorage.getItem("unlockedContents")){
+  let value = JSON.parse(localStorage.getItem("unlockedContents"))
+  if(value < 4){
+    let values = 4;
+    values = JSON.stringify(values);
+    localStorage.setItem("unlockedContents", values);
+  }
+}else{
+  localStorage.setItem("unlockedContents", "2");
 }

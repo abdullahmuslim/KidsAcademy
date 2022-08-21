@@ -11,6 +11,9 @@ body{
 a{
   color: #000;
 }
+img{
+  pointer-events: none;
+}
 .hor{
   display: flex;
   flex-direction: row;
@@ -41,15 +44,12 @@ nav{
   z-index: 2;
 }
 #menu{
-  width: 70%;
-  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: none;
   margin: none;
-  transform: scale(1.3);
 }
 #current{
   margin: 1px;
@@ -185,7 +185,7 @@ h1{
 @font-face {
   font-family: kidy;
   font-weight: bold;
-  src: url('font1.ttf');
+  src: url('fonts/font1.ttf');
 }
 @media screen and (min-width: 600px){
   main{

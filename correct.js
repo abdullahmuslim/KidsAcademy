@@ -88,7 +88,6 @@ function check(number){
     message.style.visibility = "visible";
     message.style.background = "url('wrong.gif') no-repeat";
     message.style.backgroundSize = "contain";
-    console.log('not match');
     let prev = parseInt(fail.textContent);
     fail.textContent = prev+1;
     noquestion = true;
@@ -97,3 +96,15 @@ function check(number){
   }
 }
 hint();
+
+//update lock values
+if(localStorage.getItem("unlockedContents")){
+  let value = JSON.parse(localStorage.getItem("unlockedContents"))
+  if(value < 4){
+    let values = 4;
+    values = JSON.stringify(values);
+    localStorage.setItem("unlockedContents", values);
+  }
+}else{
+  localStorage.setItem("unlockedContents", "2");
+}

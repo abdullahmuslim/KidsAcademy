@@ -48,7 +48,6 @@ function loopit(){
 
 function animate(target, value){
   let colors = document.getElementById("clr");
-  console.log(target);
   colors = colors.children;
   if (target < colors.length){
     if (target == (colors.length -1)){
@@ -82,4 +81,16 @@ function clear(){
 }
 function say(color){
   songs[color].play();
+}
+
+//update lock values
+if(localStorage.getItem("unlockedContents")){
+  let value = JSON.parse(localStorage.getItem("unlockedContents"))
+  if(value < 7){
+    let values = 7;
+    values = JSON.stringify(values);
+    localStorage.setItem("unlockedContents", values);
+  }
+}else{
+  localStorage.setItem("unlockedContents", "2");
 }

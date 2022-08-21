@@ -91,3 +91,14 @@ function check(option){
 }
 hint();
 
+//update lock values
+if(localStorage.getItem("unlockedContents")){
+  let value = JSON.parse(localStorage.getItem("unlockedContents"))
+  if(value < 8){
+    let values = 8;
+    values = JSON.stringify(values);
+    localStorage.setItem("unlockedContents", values);
+  }
+}else{
+  localStorage.setItem("unlockedContents", "2");
+}

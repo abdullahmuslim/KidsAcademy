@@ -64,7 +64,6 @@ function newquestion(){
       setTimeout(function() {
         songs[color].play();
       }, 100);
-      console.log(color)
       touch.removeEventListener("ended", function(){});
     });
   }
@@ -95,3 +94,15 @@ function check(clr){
   }
 }
 hint();
+
+//update lock values
+if(localStorage.getItem("unlockedContents")){
+  let value = JSON.parse(localStorage.getItem("unlockedContents"))
+  if(value < 7){
+    let values = 7;
+    values = JSON.stringify(values);
+    localStorage.setItem("unlockedContents", values);
+  }
+}else{
+  localStorage.setItem("unlockedContents", "2");
+}
