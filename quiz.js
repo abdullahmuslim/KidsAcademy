@@ -86,7 +86,13 @@ function newquestion(){
   let random = Math.random() * 3;
   random = Math.round(random);
   if(random != 3){
-    let random3 = document.getElementById("images").style.display = "none";
+    let random3 = document.getElementById("images");
+    random3.style.display = "none";
+    let current = document.getElementById("options").style.display = "flex";
+  }
+  if (random != 2){
+    let random2 = document.getElementById("colors");
+    random2.style.display = "none";
     let current = document.getElementById("options").style.display = "flex";
   }
   if(nottouched == false && unanswered == false){
@@ -135,6 +141,14 @@ function newquestion(){
     }
     unanswered = true;
   }else if(random == 2){
+    let current = document.getElementById("colors");
+    current.style.display = "flex";
+    let others = document.getElementById("options");
+    others.style.display = "none";
+    let images = document.getElementById("images");
+    images.style.display = "none";
+    let options = document.getElementById("colors");
+    options = options.children;
     let localrand = Math.random() * (colors.length-1);
     localrand = Math.round(localrand);
     crt = colors[localrand];
@@ -172,7 +186,10 @@ function newquestion(){
     unanswered = true;
   }else{
     let current = document.getElementById("images").style.display = "flex";
-    let options = document.getElementById("options").style.display = "none";
+    let options = document.getElementById("options");
+    options.style.display = "none";
+    let colors = document.getElementById("colors");
+    colors.style.display = "none";
     let localrand = Math.random() * (animals.length-1);
     localrand = Math.round(localrand);
     crt = animals[localrand];
@@ -201,9 +218,7 @@ function newquestion(){
   }
 }
 function check(value){
-  console.log("outside", crt);
   if(nottouched == false){
-    console.log("inside", crt);
     let score = document.getElementById("score");
     if(answered == 4){
       unanswered = false;
@@ -320,7 +335,7 @@ function check(value){
   }
 }
 function clear(){
-  let colors = document.getElementById("options");
+  let colors = document.getElementById("colors");
   colors = colors.children;
   for(let j = 0; j < colors.length; j++){
     colors[j].style.background = "#fef6ff";
@@ -346,3 +361,4 @@ function hint(){
   });
 }
 hint();
+

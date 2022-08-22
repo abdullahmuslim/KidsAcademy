@@ -33,9 +33,12 @@ nav{
   justify-content: center;
   align-items: center;
 }
-#menu svg{
+#menu{
   width: 20vw;
-  height: auto;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main{
@@ -50,7 +53,7 @@ main{
   width: 40vw;
   height: 40vw;
 }
-p{
+main p{
   display: inline;
   font-size: 2em;
 }

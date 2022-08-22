@@ -60,11 +60,11 @@ main{
   justify-content: center;
   flex-wrap: wrap;
 }
-p{
+main p{
   display: inline;
   font-size: 2em;
 }
-p:active{
+main p:active{
   background: #000;
 }
 main p{

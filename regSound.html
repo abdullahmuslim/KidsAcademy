@@ -7,20 +7,91 @@
   <link rel="stylesheet" href="regSound.css">
   <title>Pre-School Animals - Precious Kids Academy</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="menu.css">
   <style>
-    p{
+    main p{
       font-size: 1em;
-    }
+    }/*to minimize the use of class and excess unnecessary css files
   </style>
 </head>
 <body>
+  <div id="trans" role="transparent background" onmouseover="canc()"></div>
+  <div id="menuContent">
+    <div id="heading">
+      Precious Kid Academy v0.1
+    </div>
+    <div class="navs" onclick="help()">HELP</div>
+    <div class="navs" onclick="about()">ABOUT</div>
+    <div class="navs" onclick="contact()">CONTACT DEVELOPER</div>
+    <div id="togglers">
+      <div class="togglers" id="theme" onclick="toggle('theme')">
+        <p>Dark theme</p>
+        <div class="hole">
+          <div class="button">
+          </div>
+        </div>
+      </div>
+      <div class="togglers" id="lock" onclick="toggle('lock')">
+        <p>lock</p>
+        <div class="hole">
+          <div class="button">
+          </div>
+        </div>
+      </div>
+    </div>
+    <p id="copyright"> © 2022 Precious Kid Academy</p>
+    <div class="contents">
+      <div id="help">
+        <div class="canc" onclick="cancHelp()">
+          <svg viewBox="0 0 45 45">
+            <line x1="8" y1="10" x2="30" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+            <line x1="30" y1="10" x2="8" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+          </svg>
+        </div>
+        <h3>Audios abnormalities ?</h3>
+        If poems are not playing completely or stop at some point, check your internet connection and gently wait, this is due to incomplete download of media.
+        <h3>Don't like the theme ?</h3>
+        Open the menu and toggle the theme button to suit your need.
+        <h3>Want to lock/unlock lessons ?</h3>
+        Open the menu and toggle the lock button in order to lock and unlock lessons availability, useful when you won't be around to monitor kids.
+        <aside>Need more help ? <span onclick="autoContact()">Contact Developer.</span></aside>
+      </div>
+      <div id="about">
+        <div class="canc" onclick="cancAbout()">
+          <svg viewBox="0 0 45 45">
+            <line x1="8" y1="10" x2="30" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+            <line x1="30" y1="10" x2="8" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+          </svg>
+        </div>
+        <h3>About App</h3>
+        This is a simple demo of an online educating platform for pre-schoolers.
+        Kids tend to learn faster with music and can be noticed as this app teach your kids from poems to animals, using music.
+        Let your children learn in the fastest and most fun way.
+        <h3>About Developer</h3>
+        Abdullah is a young web developer, aspirant of game development and technology as a whole.
+      </div>
+      <div id="contact">
+        <div class="canc" onclick="cancContact()">
+          <svg viewBox="0 0 45 45">
+            <line x1="8" y1="10" x2="30" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+            <line x1="30" y1="10" x2="8" y2="30" style="stroke: #fff; stroke-width: 3; stroke-linecap: round;"/>
+          </svg>
+        </div>
+        Connect me on social media
+        <ul>
+          <li><a name="aLink" href="https://wa.me/message/A53BTUPBBHYBM1">Watsapp</a></li>
+          <li><a name="aLink" href="tel: +2347042448312">Telegram</a></li>
+          <li><a name="aLink" href="https://www.facebook.com/profile.php?id=100061691281857">Facebook</a></li>
+      </div>
+    </div>
+  </div>
   <nav>
     <div id="nav" class="hor">
       <div id="menu">
-      <svg width="50" height="35" onclick="menu()">
-        <line x1="8" y1="10" x2="42" y2="10" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
-        <line x1="2" y1="20" x2="48" y2="20" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
-        <line x1="8" y1="30" x2="42" y2="30" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+      <svg onclick="menu()" viewBox="0 0 60 60">
+        <line x1="8" y1="15" x2="42" y2="15" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="8" y1="25" x2="42" y2="25" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
+        <line x1="8" y1="35" x2="42" y2="35" style="stroke: #362848; stroke-width: 3; stroke-linecap: round;"/>
       </svg>
       </div>
       <div>&#10084;&nbsp;<div id="health">20</div></div>
@@ -30,29 +101,30 @@
   <main>
     <div><img id="image"/></div>
     <div id="bottoms">
-      <div onmouseover="play(this.value)" ontouchstart="play(this.value)" onclick="check(this.value)">
+      <div class="elements" onmouseover="play(this.value)" ontouchstart="play(this.value)" onclick="check(this.value)">
         <p>&#128265;</p>
         <p></p>
       </div>
-      <div onmouseover="play(this.value)" ontouchstart="play(this.value)" onclick="check(this.value)">
+      <div class="elements" onmouseover="play(this.value)" ontouchstart="play(this.value)" onclick="check(this.value)">
         <p>&#128265;</p>
         <p></p>
       </div>
-      <div onmouseover="play(this.value)" ontouchstart="play(this.value)" onclick="check(this.value)">
+      <div class="elements" onmouseover="play(this.value)" ontouchstart="play(this.value)" onclick="check(this.value)">
         <p>&#128265;</p>
         <p></p>
       </div>
-      <div onmouseover="play(this.value)" ontouchstart="play(this.value)" onclick="check(this.value)">
+      <div class="elements" onmouseover="play(this.value)" ontouchstart="play(this.value)" onclick="check(this.value)">
         <p>&#128265;</p>
         <p></p>
       </div>
-      <div onmouseover="play(this.value)" ontouchstart="play(this.value)" onclick="check(this.value)">
+      <div class="elements" onmouseover="play(this.value)" ontouchstart="play(this.value)" onclick="check(this.value)">
         <p>&#128265;</p>
         <p></p>
       </div>
     </div>
   </main>
   <div id="endScore" onclick="restart()" onmousemove="restart()"></div>
+  <script src="menu.js"></script>
   <script src="regSound.js"></script>
 </body>
 </html>

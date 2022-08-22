@@ -42,7 +42,7 @@ function newquestion(){
       if (localrand < 0){
         localrand = 0;
       }
-      options[j+1] = letters[localrand];
+      options[j+1] = letters[localrand].blink();
       letters.splice(localrand, 1);
     }
     let done = false;
@@ -99,7 +99,6 @@ function check(letter){
       let oldScore = parseInt(score.textContent);
       let newTime = new Date().getSeconds();
       let atnscore = 3;
-      console.log(oldTime, newTime);
       if(newTime - oldTime < 5){
         atnscore = 6;
       }
@@ -124,3 +123,15 @@ function restart(){
   health.innerHTML = "20";
 }
 newquestion();
+
+//update lock values
+if(localStorage.getItem("unlockedContents")){
+  let value = JSON.parse(localStorage.getItem("unlockedContents"))
+  if(value < 6){
+    let values = 6;
+    values = JSON.stringify(values);
+    localStorage.setItem("unlockedContents", values);
+  }
+}else{
+  localStorage.setItem("unlockedContents", "2");
+}

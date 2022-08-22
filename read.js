@@ -79,14 +79,11 @@ function animate(target, value){
         value += 1;
       }else{
         if (value < 2){
-          console.log(target);
           if(target == 6 || target == 20){
-            console.log("yep", target);
             letters[target].style.animation = "animate 0.3s ease-in";
             letters[target].style.filter = "invert(100%)";
             setTimeout(function() {animate(target+1, value)}, 2800);
           }else if(target == 13){
-            console.log("yep", target);
             letters[target].style.animation = "animate 0.3s ease-in";
             letters[target].style.filter = "invert(100%)";
             setTimeout(function() {animate(target+1, value)}, 2800);
@@ -127,3 +124,16 @@ function clear(){
 function say(letter){
   songs[letter].play();
 }
+
+//update lock values
+if(localStorage.getItem("unlockedContents")){
+  let value = JSON.parse(localStorage.getItem("unlockedContents"))
+  if(value < 5){
+    let values = 5;
+    values = JSON.stringify(values);
+    localStorage.setItem("unlockedContents", values);
+  }
+}else{
+  localStorage.setItem("unlockedContents", "2");
+}
+alert("play unlocked, click on the game navigation button");
