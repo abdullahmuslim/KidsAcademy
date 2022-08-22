@@ -35,6 +35,13 @@ nav{
   width: 20vw;
   height: auto;
 }
+#menu{
+  width: 20vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #back{
   width: 5%;
   height: 5%;
