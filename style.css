@@ -29,8 +29,15 @@ nav{
   background: #fff;
 }
 #nav img{
+  flex: 1;
   width: 20vw;
   height: auto;
+}
+#schname{
+  padding: none;
+  margin: none;
+  flex: 2;
+  font-size: 100%;
 }
 #menu{
   width: 20vw;
