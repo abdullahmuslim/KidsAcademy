@@ -43,9 +43,16 @@ nav{
   justify-content: center;
   align-items: center;
 }
-#nav img{
-  width: 20vw;
-  height: auto;
+#nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 5em;
+}
+#nav img, #nav svg{
+  width: auto;
+  height: 5em;
 }
 #back{
   width: 5%;
@@ -57,7 +64,6 @@ nav{
 }
 main{
   margin: none;
-  margin-top: 25vw;
   margin-bottom: 10vh;
   display: flex;
   flex-direction: row;
@@ -234,5 +240,3 @@ main p:nth-child(4){
 @media screen and (min-width: 600px){
   
 }
-
-

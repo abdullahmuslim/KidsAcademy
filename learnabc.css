@@ -28,18 +28,26 @@ a{
   align-items: center;
 }
 nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 3;
-  position: fixed;
   top: 0;
   width: 100vw;
-  height: auto;
+  height: 5em;
   background: #fff;
   border-bottom: 2px solid #fff;
 }
-
-#nav img{
-  width: 20vw;
-  height: auto;
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 5em;
+}
+#nav img, #nav svg{
+  width: auto;
+  height: 5em;
 }
 #menu{
   width: 20vw;
@@ -58,8 +66,7 @@ nav{
 }
 main{
   margin: none;
-  margin-top: 25vw;
-  margin-bottom: 25vw;
+  margin-top: 5em;
   margin-bottom: 10vh;
   display: flex;
   flex-direction: row;
@@ -96,13 +103,13 @@ main p{
 .controls div:first-child{
   color: #50c46e;
   background: #1b4225;
-  padding: 0.7 1em;
+  padding: 0.7em 1em;
   border-radius: 15%;
 }
 .controls div:last-child{
   color: #c450a5;
   background: #421b38;
-  padding: 0.7 1em;
+  padding: 0.7em 1em;
   border-radius: 15%;
 }
 

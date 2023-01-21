@@ -35,13 +35,16 @@ nav{
   background: #fff;
   border-bottom: 2px solid #fff;
 }
-#menu{
-  width: 20vw;
-  height: auto;
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 5em;
 }
-#nav img{
-  width: 20vw;
-  height: auto;
+#nav img, #nav svg{
+  width: auto;
+  height: 5em;
 }
 #back{
   width: 5%;

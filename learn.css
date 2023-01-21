@@ -23,21 +23,30 @@ a{
 nav{
   z-index: 1;
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   width: 100vw;
-  height: auto;
+  height: 5em;
   background: #fff;
   border-bottom: solid 2px #fff;
 }
-#nav img{
-  width: 20vw;
-  height: auto;
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+#nav img, #nav svg{
+  width: auto;
+  height: 5em;
 }
 #back{
   width: 5%;
   height: 5%;
   left: 1vw;
-  top: 25vw;
+  top: 5em;
   position: fixed;
   z-index: 2;
 }
@@ -58,12 +67,15 @@ nav{
   border-bottom: 2px solid #5929e5;
 }
 main{
+  z-index: 0;
   margin: none;
-  margin-top: 25vw;
+  margin-top: 5em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: space-between;
+  width: 90vw;
 }
 main a{
   display: flex;

@@ -21,21 +21,29 @@ a{
 }
 
 nav{
+  z-index: 1;
   position: fixed;
   top: 0;
-  z-index: 1;
-  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
-  height: auto;
+  height: 5em;
   background: #fff;
 }
-#nav img{
-  width: 20vw;
-  height: auto;
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+#nav img, #nav svg{
+  width: auto;
+  height: 5em;
 }
 #menu{
-  width: 20vw;
-  height: 20vw;
+  width: auto;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,26 +59,28 @@ nav{
 main{
   z-index: 0;
   margin: none;
-  margin-top: 25vw;
+  margin-top: 5em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: space-between;
+  width: 90vw;
 }
 main a{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70vw;
-  height: 70vw;
+  width: 40vw;
+  height: 40vw;
   margin: 5vw auto;
   background: #fef6ff;
   border-radius: 15%;
   text-decoration: none;
 }
 a div img{
-  width: 40vw;
+  width: 20vw;
 }
 @font-face {
   font-family: kidy;
@@ -80,12 +90,11 @@ a div img{
 
 @media screen and (min-width: 600px){
   main a{
-    width: 40vw;
-    height: 40vw;
-    margin: 3vw;
+    width: 20vw;
+    height: 20vw;
   }
   a div img{
-    width: 22vw;
+    width: 11vw;
   }
   #back{
     top: 20vw;

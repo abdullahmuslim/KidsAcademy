@@ -26,12 +26,18 @@ nav{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100vw;
+  height: 5em;
 }
 #nav div{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+#nav img, #nav svg{
+  width: auto;
+  height: 5em;
 }
 #menu{
   width: 20vw;
@@ -43,11 +49,14 @@ nav{
 
 main{
   margin: none;
-  margin-top: 25vw;
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#question{
+  margin-top: 5em;
 }
 #image{
   width: 40vw;

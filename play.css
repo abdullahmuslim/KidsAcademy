@@ -26,9 +26,16 @@ nav{
   background: #fff;
   border-bottom: solid 2px #fff;
 }
-#nav img{
-  width: 20vw;
-  height: auto;
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 5em;
+}
+#nav img, #nav svg{
+  width: auto;
+  height: 5em;
 }
 #menu{
   width: 20vw;
@@ -57,7 +64,7 @@ nav{
 }
 main{
   margin: none;
-  margin-top: 25vw;
+  margin-top: 5em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
